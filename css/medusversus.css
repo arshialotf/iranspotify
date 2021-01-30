@@ -1,0 +1,585 @@
+@import url('resetter.css');
+body{
+    background-color: rgb(233, 231, 231);
+}
+#container{
+    width: 1080px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    background-color: rgb(140, 177, 199);
+}
+header nav{
+    height: 60px;
+    background-color: rgb(140, 177, 199);
+    margin: 0 auto;
+}
+header nav h3{
+    text-align: left;
+    height: 0;
+    line-height: 60px;
+    color: white;
+    font-size: 25px;
+}
+header nav h3 span{
+    font-size: 18px;
+    font-weight: lighter;
+}
+header nav ul{
+    text-align: right;
+    line-height: 60px;
+}
+header nav ul li{
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 10px;
+    vertical-align: top;
+    position: relative;
+    top: 15px;
+    transition: all 0.5s;
+}
+header nav ul li:hover{
+    background-color: #4d494950;
+    border-bottom: 3px solid rgb(58, 59, 59);
+}
+header nav ul li ul{
+    position: absolute;
+    left: 0;
+    height: 130px;
+    visibility: hidden;
+    margin-top: 20px;
+    background-color: rgb(192, 43, 43);
+    border-radius: 10px;
+    transition: all 1s;
+    opacity: 0;
+}
+header nav ul li li{
+    background-color: rgba(255, 255, 255, 0.247);
+    display: block;
+    margin: 5px;
+    width: 170px;
+    text-align: left;
+}
+header nav ul li li:hover{
+    background-color: rgb(140, 177, 199);
+}
+header nav ul li li:first-child > a::after{
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: -29px;
+    border-left: 10px solid transparent ;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(192, 43, 43);
+}
+header nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 10px;
+}
+.image img{
+    width: 100%;
+    height: 500px;
+}
+.image div:first-of-type{
+    background-color: rgba(192, 43, 43, 0.80);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 310px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+.image div:nth-of-type(2){
+    background-color: rgb(192, 43, 43, 0.80);
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+    position: absolute;
+    top: 260px;
+    right: 42%;
+    text-align: center;
+    border-radius: 5px;
+}
+.image div:nth-of-type(3){
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 400px;
+    font-size: 15px;
+    padding: 5px;
+    position: absolute;
+    top: 310px;
+    right: 35%;
+    text-align: center;
+    border-radius: 5px;
+}
+.image div:last-of-type{
+    background-color: rgba(192, 43, 43, 0.80);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 310px;
+    right: 0;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px 0 0 10px;
+}
+.underphoto{
+text-align: center;
+margin: 10px 0;
+cursor: pointer;
+}
+.underphoto div:first-of-type{
+    background-color: rgb(180, 172, 172);
+    width: 80px;
+    height: 4px;
+    display: inline-block;
+}
+.underphoto div:nth-of-type(2){
+    background-color: rgb(192, 43, 43);
+    width: 80px;
+    height: 4px;
+    display: inline-block;
+}
+.underphoto div:last-of-type{
+    background-color: rgb(180, 172, 172);
+    width: 80px;
+    height: 4px;
+    display: inline-block;
+}
+.services{
+    background-color: rgba(155, 149, 149, 0.178);
+    margin: 0 20px;
+    height: 100px;
+    overflow: auto;
+}
+.services h3{
+    color: rgb(133, 127, 127);
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 15px 15px 0 15px;
+}
+.services p{
+    color: rgb(133, 127, 127);
+    font-size: 15px;
+    margin: 5px 15px 15px 15px;
+}
+.services div:first-of-type{
+    display: inline-block;
+}
+.services div:last-of-type{
+    background-color: rgb(192, 43, 43);
+    border-bottom: 5px solid rgb(155, 20, 20);
+    color: white;
+    line-height: 60px;
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 1s;
+    position: relative;
+    top: -15px;
+}
+.services div:last-of-type:hover{
+    background-color: rgb(155, 20, 20);
+    cursor: pointer;
+}
+main section{
+
+}
+main section div{
+    overflow: auto;
+    display: inline-block;
+    background-color: white;
+    height: 300px;
+    width: 255px;
+    margin: 20px 10px;
+    text-align: center;
+}
+main section div:first-of-type{
+    margin-left: 0;
+}
+main section div:last-of-type{
+    margin-right: 0;
+}
+main section div i:first-of-type{
+    color: rgb(140, 177, 199);
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    transition: color 0.5s;
+}
+main section div h4{
+    margin-bottom: 40px;
+}
+main section div p{
+    padding: 0 10px;
+    color: rgb(133, 127, 127);
+}
+main .view{
+    background-color: rgb(140, 177, 199);
+    border-bottom:5px solid rgb(106, 136, 153);
+    color: white;
+    width: 150px;
+    height: 60px;
+    display: inline-block;
+    margin: 0 50px;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    top: -55px;
+    border-radius: 10px;
+    transition:all 0.5s;
+}
+main .viewmore div:nth-of-type(2){
+    left: 20px;
+}
+main .viewmore div:nth-of-type(3){
+    left: 40px;
+}
+main .viewmore div:nth-of-type(4){
+    left: 60px;
+}
+main section div:hover i:first-of-type{
+    color: rgb(192, 43, 43);
+}
+main section div:hover main .view{
+    background-color: rgb(192, 43, 43);
+    border-bottom: 5px solid rgb(155, 20, 20);
+}
+main .view:hover{
+    background-color: rgb(192, 43, 43);
+    border-bottom: 5px solid rgb(155, 20, 20);
+    cursor: pointer;
+}
+main .picscap{
+    background-color: rgba(196, 185, 172, 0.685);
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+main .picscap h3{
+    font-size: 35px;
+    color: rgb(192, 43, 43);
+    font-weight: lighter;
+    padding-top: 40px;
+}
+main .picscap p{
+    color: rgb(133, 127, 127);
+}
+
+main .pics img{
+    width: 338px;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    top: -150px;
+    transition: all 1s;
+    border-radius: 10px;
+    border: 5px solid rgb(133, 127, 127);
+}
+main .pics img::after{
+    font-family: 'FontAwesome';
+    content:"\f141";
+    position: absolute;
+    top: 100px;
+}
+main .pics img:nth-of-type(1){
+    transform-origin: left;
+    border-top: 20px solid rgb(133, 127, 127);
+}
+main .pics  img:nth-of-type(2){
+    transform-origin: center center;
+    border-top: 20px solid rgb(133, 127, 127);
+}
+main .pics img:nth-of-type(3){
+    transform-origin: right;
+    border-top: 20px solid rgb(133, 127, 127);
+}
+main .pics img:hover{
+    transform: scale(1.3);
+    z-index: 5;
+    cursor: pointer;
+}
+main .underpics{
+
+}
+main .underpics1{
+    display: inline-block;
+    position: relative;
+    top: -100px;
+    width: 250px;
+    height: 250px;
+
+}
+main .underpics1 h3{
+    margin-bottom: 20px;
+    color: rgb(133, 127, 127);
+    
+}
+main .underpics1 ul{
+
+}
+main .underpics1 ul li{
+    color: rgb(192, 43, 43);
+    list-style-type: none;
+    padding: 5px;
+    font-size: 13px;
+}
+main .underpics1 ul li a{
+    color: rgb(133, 127, 127);
+    margin-left: 5px;
+}
+main .underpics2{
+    position: relative;
+    top: -90px;
+    margin-left: 65px;
+    width: 440px;
+    height: 250px;
+    display: inline-block;
+}
+main .underpics2 p{
+    font-size: 15px;
+    color: rgb(133, 127, 127);
+}
+main .underpics2 p a{
+    color: rgb(192, 43, 43);
+}
+main .underpics2 img{
+    margin-top: 40px;
+    width: 440px;
+} 
+main .underpics3{
+   
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    position: relative;
+    top: -130px;
+    margin-left: 65px;
+}
+main .underpics3 h3{
+    margin-bottom: 20px;
+    color: rgb(133, 127, 127);
+}
+main .underpics3 p{
+    color: rgb(133, 127, 127);
+    background-color: white ;
+    height: 50%;
+    font-size: 15px;
+    padding: 10px;
+}
+main .underpics3 p::after{
+    content: '';
+    border-left: 25px solid transparent;
+    border-top: 25px solid white;
+    position: absolute;
+    bottom: 58px;
+    left: 20px;
+}
+main .underpics3 p::before{
+    content: 'John Doe';
+    color: rgb(133, 127, 127);
+    font-size: larger;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+main .client{
+
+    position: relative;
+    top: -100px;
+}
+main .client span{
+    color: rgb(133, 127, 127);
+    font-weight: bold;
+}
+main .client hr{
+    display: inline-block;
+    width: 900px;
+    margin-left: 20px;
+    height: 5px;
+    background-color: rgba(133, 127, 127, 0.322);
+}
+main .query{
+    position: relative;
+    top: -40px;
+}
+main .query div{
+    display: inline-block ;
+    background-color: rgb(255, 249, 249);
+    width: 160px;
+    height: 100px;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+    color: rgb(133, 127, 127);
+}
+main .query div i:first-of-type{
+    
+}
+footer{
+    background-color: rgb(140, 177, 199);
+    width: 100%;
+    height: 300px;
+}
+footer .aside {
+    display: inline-block;
+    width: 350px;
+    height: 250px;
+    color: white;
+}
+footer .aside h3{
+    line-height: 60px;
+    color: white;
+    font-size: 25px;
+}
+footer .aside h3 span{
+    font-size: 18px;
+    font-weight: lighter;
+}
+footer .aside p{
+    font-size: 15px;
+    line-height: 1.5em;
+    color: white;
+
+}
+footer .aside h4{
+    font-style: italic;
+    display: inline-block;
+    margin-top: 20px;
+}
+footer .company{
+    display: inline-block;
+    margin-left: 40px;
+}
+footer .company h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: rgb(0, 63, 63);
+}
+footer .company ul{
+    list-style-type: none;
+    color: white;
+    line-height: 10px;
+}
+footer .company ul li{
+    font-size: 15px;
+    padding: 5px;
+}
+footer .company ul li:hover a{
+    color: rgb(58, 59, 59);
+}
+footer .company ul li i:first-of-type{
+    padding-right: 5px;
+}
+footer .unity{
+    display: inline-block;
+    position: relative;
+    top: -47px;
+    margin-left: 40px;
+}
+footer .unity h4{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: rgb(0, 63, 63);
+}
+footer .unity ul{
+    list-style-type: none;
+    color: white;
+    line-height: 10px;
+}
+footer .unity ul li{
+    font-size: 15px;
+    padding: 5px;
+}
+footer .unity ul li:hover a{
+    color: rgb(58, 59, 59);
+}
+footer .unity ul li i:first-of-type{
+    padding-right: 5px;
+}
+footer .blog{
+    margin-left: 30px;
+    width: 350px;
+    height: 250px;
+    display: inline-block;
+    position: relative;
+    top: 60px;
+}
+footer .blog div{
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+}
+footer .blog div span{
+    font-weight: bold;
+    font-style: normal;
+}
+footer .blog i:first-of-type{
+    margin-top: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 70px;
+    margin-right: 20px;
+}
+footer .blog i:last-of-type{
+
+    display: inline-block;
+    font-size: 70px;
+    margin-right: 20px;
+    color: white;
+}
+footer .blog p{
+    position: relative;
+    left: 100px;
+    bottom: 60px;
+    color: white;
+}
+.secfooter{
+    background-color: rgb(109, 142, 161);
+    height: 50px;
+}
+.secfooter div span{
+    text-align: left;
+    line-height: 50px;
+    display: inline-block;
+    height: 0;
+    color: white ;
+}
+.secfooter div ul{
+    text-align: right;
+}
+.secfooter div ul li{
+    height: 50px;
+    width: 50px;
+    padding: 0 10px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: -34px;
+    transition: background-color 0.5s;
+}
+.secfooter div ul li i:first-of-type{
+    font-size: 30px;
+    line-height: 50px;
+}
+.secfooter div ul li:hover{
+    background-color: rgba(24, 71, 71, 0.438);
+}
+
